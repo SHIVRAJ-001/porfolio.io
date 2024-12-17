@@ -1,0 +1,367 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color:white;
+}
+.nav-links a:hover {
+    color: red;
+}
+nav {
+    background-color:black;
+    box-shadow: 0 4px 6px rgba(78, 66, 244, 0.844);
+}
+#skills {
+    background-color:#3e0973; /* Light cyan background color */
+    padding: 50px 0; /* Adds padding to top and bottom */
+}
+
+.hero-section {
+    position: relative;
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;
+    overflow: hidden;
+}
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+.hero-text span {
+    color: #d76d09;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+.btn-custom {
+    background: #4d02ff;
+    color:red;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: background 0.3s ease-in-out;
+}
+.btn-custom:hover {
+    background: #3701b3;
+}
+.social-icons a {
+    color:oldlace;
+    font-size: 2.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    color: red;
+}
+.hero-image img {
+    width: 250px;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+
+/* About Section */
+.about-section {
+    background-color:black;
+    padding: 50px 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: orangered;
+    margin-bottom: 15px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.about-text {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    animation:fadein;
+}
+
+.about-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid rgb(40, 40, 106);
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: white;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    background-color: rgb(224, 89, 89);
+    padding: 50px 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+.skill-card {
+    
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color:rgb(10, 10, 10);
+}
+
+.skill-card:active {
+    transform: translateY(-50px);
+    box-shadow: 0px 20px 30px rgba(33, 23, 211, 0.912);
+}
+
+.skill-circle {
+    width: 80px;
+    height: 90px;
+    margin: 0 auto;
+border-radius:20% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    background:black;
+}
+
+.skill-circle img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Spacing */
+.education-certifications {
+    background-color:white;
+}
+
+.education-certifications .card {
+    margin-bottom: 1.5rem;
+    background-color:black;
+}
+
+/* LinkedIn Button */
+.linkedin-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
+.logo {
+    font-weight: bold;
+}
+
+.menu-icon { 
+    font-size: 2rem;
+    color: red; /* Sets the hamburger icon to red */
+    cursor: pointer;
+    display: none; /
+
+}
+
+/* Experience Section */
+.section-title {
+    text-align: center;
+    margin:  0;
+    font-size: 50px;
+}
+
+.section-title span {
+    margin-right: 0.5rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 3px;
+    height: 100%;
+    background-color: #1b1b3a;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #ff8200;
+    border: 3px solid #1b1b3a;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.content {
+    background-color: #ff8200;
+    padding: 1rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 4px 8px black;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.role, .date {
+    font-size: 0.9rem;
+}
+/* Call-to-Action Section */
+.cta-section {
+    background-color:whitesmoke;
+    padding: 50px 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+footer {
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .project-card:hover,
+    .btn-custom:hover,
+    .skill-card:hover {
+        transform: translateY(-50px);
+    box-shadow: 0px 20px 30px rgba(33, 23, 211, 0.912);
+       /* transform: r  Disable hover transformations on mobile */
+       /* box-shadow:  Simplify mobile experience */
+    }
+}
